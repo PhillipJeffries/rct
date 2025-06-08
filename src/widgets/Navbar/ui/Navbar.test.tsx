@@ -3,10 +3,11 @@ import {render, screen} from '@testing-library/react'
 // import '@testing-library/jest-dom'
 // import Fetch from './fetch'
 import Navbar from './Navbar'
+import { renderWithTranslation } from 'shared/lib/renderWithTranslation/renderWithTranslation'
 
 test('loads and displays greeting', async () => {
   // ARRANGE
-  render(<Navbar />)
+  renderWithTranslation(<Navbar />)
 
   // ACT
 //   await userEvent.click(screen.getByText('Load Greeting'))
