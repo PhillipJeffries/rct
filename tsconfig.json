@@ -9,15 +9,21 @@
         "moduleResolution": "node",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-
+        "resolveJsonModule": true,
         "baseUrl": ".",
         "paths": {
-            "*": ["./src/*"]
+            "*": [
+                "./src/*"
+            ]
         },
     },
     "ts-node": {
         "compilerOptions": {
             "module": "CommonJS"
         }
-    }
+    },
+    "include": [
+        "./src",
+        "./setupTests.ts"
+    ]
 }

@@ -1,0 +1,17 @@
+:local {
+    .navbar {
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        border: 3px solid var(--bg-color-inverted);
+        height: var(--navbar-height);
+
+        
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+    }
+}

@@ -38,10 +38,22 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
     type: 'asset/inline'
   }
 
+  const babelLoader = {
+    test: /\.(m?js|jsx|ts|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: "babel-loader",
+      options: {
+        presets: ['@babel/preset-env']
+      }
+    }
+  }
+
   return [
-    typescriptLoader,
     fileLoader,
     svgLoader,
+    babelLoader,
+    typescriptLoader,
     styleLoader,
   ]
 }
