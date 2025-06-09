@@ -67,5 +67,8 @@
     "react-router-dom": "^7.6.0"
   },
   "main": "index.js",
-  "repository": "git@github.com:PhillipJeffries/rct.git"
+  "repository": "git@github.com:PhillipJeffries/rct.git",
+  "browser": {
+    "[module-name]": false   
+  }
 }
