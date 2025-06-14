@@ -1,4 +1,4 @@
-import classes from './app.module.scss'
+import * as classes from './app.module.scss'
 import { useTheme } from './providers/ThemeProvider';
 import { classNames } from 'shared/lib/helpers/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';

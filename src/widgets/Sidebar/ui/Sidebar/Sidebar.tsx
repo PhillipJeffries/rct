@@ -1,5 +1,5 @@
 import { classNames } from "shared/lib/helpers/classNames/classNames"
-import s from './Sidebar.module.scss'
+import * as s from './Sidebar.module.scss'
 import { FC, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { LangSwitcher } from "widgets/LangSwitcher"
