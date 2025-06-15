@@ -2,13 +2,16 @@
     .appLink {
         color: whitesmoke;
         padding: 0 5px;
+        text-decoration: none;
     }
 
     .primary {
         background-color: white;
+        color: var(--primary-color);
     }
 
     .secondary {
         background-color: black;
+        color: var(--primary-color);
     }
 }
