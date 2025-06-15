@@ -6,7 +6,7 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildPaths } from './types/config';
 
 export function buildPlugins(paths: BuildPaths, isDev: boolean): WebpackPluginInstance[] {
-    return [
+    const plugins = [
         new HtmlWebpackPlugin({ template: paths.html }),
         new webpack.ProgressPlugin(),
         new MiniCssExtractPlugin({
@@ -15,10 +15,14 @@ export function buildPlugins(paths: BuildPaths, isDev: boolean): WebpackPluginIn
         }),
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev)
-        }),
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false
         })
-
     ]
+
+    if (isDev) {
+        plugins.push(new BundleAnalyzerPlugin({
+            openAnalyzer: false
+        }))
+    }
+
+    return plugins
 }
