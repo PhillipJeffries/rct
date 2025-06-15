@@ -1,5 +1,5 @@
 import { Counter } from "components/counter"
-import img from 'shared/assets/img.png'
+import * as img from 'shared/assets/img.png'
 import { useTranslation } from "react-i18next"
 
 const AboutPage = () => {
