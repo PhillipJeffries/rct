@@ -50,9 +50,9 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
   }
 
   return [
-    fileLoader,
     svgLoader,
     babelLoader,
+    fileLoader,
     typescriptLoader,
     styleLoader,
   ]
