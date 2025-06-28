@@ -31,9 +31,6 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
   const fileLoader = {
     test: /\.png/i,
     type: 'asset/resource',
-    generator: {
-      emit: false,
-    }
   }
 
   const svgLoader = {
