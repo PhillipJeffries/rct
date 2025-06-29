@@ -1,4 +1,3 @@
-import React from "react"
 import { AboutPage } from "pages/aboutPage"
 import { HomePage } from "pages/homePage"
 import { NotFoundPage } from "pages/notFoundPage"

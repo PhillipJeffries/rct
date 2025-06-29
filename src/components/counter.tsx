@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import * as classes from './counter.module.scss'
 
 export const Counter = () => {
